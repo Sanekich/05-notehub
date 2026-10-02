@@ -75,11 +75,7 @@ export default function NoteForm({ onClose }: NoteFormProps) {
             rows={8}
             className={css.textarea}
           />
-          <ErrorMessage
-            name="content"
-            component="span"
-            className={css.error}
-          />
+          <ErrorMessage name="content" component="span" className={css.error} />
         </div>
 
         <div className={css.formGroup}>
@@ -95,11 +91,7 @@ export default function NoteForm({ onClose }: NoteFormProps) {
         </div>
 
         <div className={css.actions}>
-          <button
-            type="button"
-            className={css.cancelButton}
-            onClick={onClose}
-          >
+          <button type="button" className={css.cancelButton} onClick={onClose}>
             Cancel
           </button>
           <button
